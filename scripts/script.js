@@ -180,5 +180,5 @@ function displayList() {
   currentCalculation.innerHTML = "";
 
   const elements = list.display();
-  currentCalculation.textContent = elements.join(" ");
+  currentCalculation.textContent = elements.join(", ");
 }

@@ -91,6 +91,11 @@ input[type="number"] {
   margin-top: 1rem;
   text-align: center;
 }
+section {
+  margin-top: 20px;
+  padding: 0 20px;
+}
+
 a {
   color: white;
   position: relative;

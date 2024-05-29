@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/stack.css" />
+    <title>Stack and Queue Interface</title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <a href="index.html">Linked List Interface/</a
+        ><a href="stack.html">Stack+Queue</a>
+      </h1>
+    </header>
+    <section id="calculator">
+      <h2>Stack</h2>
+       <label for="input-number">Enter a value:</label>
+      <input type="number" id="input-number" />
+       <div id="calc-actions"></div>
+        <button  type="button" onclick="push()">Push</button>
+        <button  type="button" onclick="pop()">Pop</button>
+        <button  type="button" onclick="peek()">Peek</button>
+         </div>
+        <h2>Current Stack:</h2>
+      <div id="current-stack"></div>
+    </section>
+    <div id="stack-display"></div>
+    
+    <section id="calculator">
+      <h2>Queue</h2>
+       <label for="input-queue">Enter a value:</label>
+      <input type="number" id="input-queue" />
+       <div id="calc-actions"></div>
+        <button  type="button" id="btn-push" onclick="enqueue()">Enqueue</button>
+        <button  type="button" id="btn-pop" onclick="dequeue()">Dequeue</button>
+        <button  type="button" id="btn-peek" onclick="peekQueue()">Peek</button>
+      </div>
+      <h2>Current Queue:</h2>
+      <div id="current-queue"></div>
+    </section>
+    <div id="queue-display"></div>
+    <script src="scripts/stack.js"></script>
+  </body>
+</html>
