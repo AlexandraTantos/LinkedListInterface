@@ -9,9 +9,15 @@ function push() {
 }
 
 function removeElement() {
-  const poppedElement = pop();
-  if (poppedElement !== null) {
-    alert("Popped element: " + poppedElement);
+  let removedElement;
+  if (document.getElementById("current-stack")) {
+    removedElement = pop();
+  } else if (document.getElementById("current-queue")) {
+    removedElement = dequeue();
+  }
+
+  if (removedElement !== null) {
+    alert("Removed element: " + removedElement);
   }
 }
 
