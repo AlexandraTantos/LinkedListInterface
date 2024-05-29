@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/app.css" />
+    <title>Linked List Interface</title>
+  </head>
+  <body>
+    <header>
+      <h1>Linked List Interface</h1>
+    </header>
+    <section id="calculator">
+      <label for="input-number">Enter a value:</label>
+      <input type="number" id="input-number" />
+      <label for="input-position">Enter a position (optional):</label>
+      <input type="number" id="input-position" />
+      <div id="calc-actions">
+        <button type="button" id="btn-add" onclick="addElement()">
+          Add to End
+        </button>
+        <button type="button" id="btn-prepend" onclick="prependElement()">
+          Add to Beginning
+        </button>
+        <button type="button" id="btn-insert" onclick="addElementAtPosition()">
+          Add at Position
+        </button>
+        <button type="button" id="btn-remove" onclick="removeElement()">
+          Remove
+        </button>
+        <button
+          type="button"
+          id="btn-remove-first"
+          onclick="removeFirstElement()"
+        >
+          Remove First
+        </button>
+        <button
+          type="button"
+          id="btn-remove-last"
+          onclick="removeLastElement()"
+        >
+          Remove Last
+        </button>
+      </div>
+    </section>
+    <section id="results">
+      <h2>Current List:</h2>
+      <div id="current-list"></div>
+    </section>
+    <div id="list"></div>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
