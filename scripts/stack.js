@@ -37,7 +37,7 @@ function pop() {
     return poppedElement;
   } else {
     alert("Stack is empty");
-    return null; // Return null if stack is empty
+    return null;
   }
 }
 
@@ -46,7 +46,7 @@ function displayStack() {
   stackDisplay.innerHTML = stack.join(", ");
 }
 
-// Queue operations
+// Queue
 const queue = [];
 
 function enqueue() {
