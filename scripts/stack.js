@@ -34,7 +34,7 @@ function pop() {
   if (stack.length > 0) {
     const poppedElement = stack.pop();
     displayStack();
-    return poppedElement;
+    alert(poppedElement);
   } else {
     alert("Stack is empty");
     return null;
@@ -61,7 +61,7 @@ function dequeue() {
   if (queue.length > 0) {
     const dequeuedElement = queue.shift();
     displayQueue();
-    return dequeuedElement;
+    alert(dequeuedElement);
   } else {
     alert("Queue is empty");
     return null;
