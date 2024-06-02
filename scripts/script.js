@@ -100,7 +100,34 @@ class LinkedList {
 
     current.succ = null;
   }
+  removeAtPosition(position) {
+    if (this.front === null) {
+      alert("The list is empty.");
+      return;
+    }
 
+    if (position === 0) {
+      this.front = this.front.succ;
+      return;
+    }
+
+    let current = this.front;
+    let previous = null;
+    let index = 0;
+
+    while (current !== null && index < position) {
+      previous = current;
+      current = current.succ;
+      index++;
+    }
+
+    if (current === null) {
+      alert("Position out of bounds");
+      return;
+    }
+
+    previous.succ = current.succ;
+  }
   display() {
     let current = this.front;
     let elements = [];
@@ -174,7 +201,17 @@ function removeLastElement() {
   list.removeLast();
   displayList();
 }
-
+function removeElementAtPosition() {
+  const positionInput = document.getElementById("input-position");
+  const position = parseInt(positionInput.value);
+  if (!isNaN(position)) {
+    list.removeAtPosition(position);
+    positionInput.value = "";
+    displayList();
+  } else {
+    alert("You need to introduce a position!");
+  }
+}
 function displayList() {
   const currentCalculation = document.getElementById("current-list");
   currentCalculation.innerHTML = "";
